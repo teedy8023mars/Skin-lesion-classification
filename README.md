@@ -61,6 +61,12 @@ The project requires the following Python packages:
 
 The project uses skin lesion images for both segmentation and classification tasks. The data should be organized in appropriate directories for training and validation.
 
+**Training data source:**
+
+- The training dataset is from the [ISIC 2018: Skin Lesion Analysis Towards Melanoma Detection Challenge](https://challenge.isic-archive.com/data/).
+- Official download page: https://challenge.isic-archive.com/data/#2018
+- Please download the dataset from the official ISIC 2018 website and follow their terms of use.
+
 ## Results
 
 The models achieve good performance on both segmentation and classification tasks. Detailed results and visualizations are available in the respective notebooks.
