@@ -1,6 +1,6 @@
 # Deep Learning-Based Skin Lesion Segmentation and Classification
 
-![Skin Lesions](https://isic-archive.com/api/v1/image/ISIC_0015719/thumbnail)
+![Skin Lesions](https://isic-challenge-data.s3.amazonaws.com/media/DermoscopyImageAnalysisPPT_3.png)
 
 ## Project Overview
 
@@ -85,7 +85,7 @@ def unet_model(input_size=(256, 256, 3)):
 - **Sensitivity and Specificity**: Evaluate the model's ability to identify lesion and healthy regions respectively
 
 #### Results Visualization
-![Segmentation Results](https://isic-archive.com/api/v1/image/ISIC_0015719/segmentation)
+![Segmentation Results](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThUfbGUbo8n-PREwipG7ByhgmRcgpczU9pDQ&s)
 
 #### Challenges and Solutions
 1. **Boundary Ambiguity**: Skin lesion boundaries are often unclear
@@ -103,7 +103,7 @@ def unet_model(input_size=(256, 256, 3)):
 The skin lesion classification task aims to categorize skin lesion images into different types of skin diseases, such as benign nevi, basal cell carcinoma, melanoma, etc. This task employs transfer learning methods, using pre-trained models to extract features before fine-tuning for skin lesion classification.
 
 #### Model Architecture: EfficientNet
-![EfficientNet Architecture](https://github.com/tensorflow/tpu/raw/master/models/official/efficientnet/images/efficientnet.png)
+![EfficientNet Architecture](https://blog.roboflow.com/content/images/2024/04/image-1081.webp)
 
 The EfficientNet series of models is known for its efficient parameter utilization and exceptional performance, with the following features:
 - **Compound Scaling**: Simultaneously scales network depth, width, and resolution for optimal performance
@@ -160,7 +160,7 @@ def create_model(input_shape=(224, 224, 3), num_classes=7):
 - **ROC Curve and AUC**: Evaluate the model's ability to distinguish between different categories
 
 #### Results Visualization
-![Classification Results and Confusion Matrix](https://raw.githubusercontent.com/udacity/ai-skin-cancer/master/images/confusion_matrix.png)
+![Classification Results and Confusion Matrix](https://www.mdpi.com/sensors/sensors-22-04399/article_deploy/html/images/sensors-22-04399-g001.png)
 
 #### Challenges and Solutions
 1. **Class Imbalance**: Significant differences in sample numbers between different skin lesion categories
@@ -223,7 +223,6 @@ This project uses the **ISIC 2018: Skin Lesion Analysis Towards Melanoma Detecti
   - 7 skin lesion categories
   - High-resolution RGB images
 
-![Dataset Examples](https://isic-archive.com/api/v1/image/ISIC_0015719/thumbnail)
 
 ## Conclusions and Future Work
 
@@ -239,16 +238,3 @@ This project uses the **ISIC 2018: Skin Lesion Analysis Towards Melanoma Detecti
 3. Develop lightweight models suitable for mobile device deployment
 4. Extend research to more types of skin lesions
 
-## References
-
-1. Ronneberger, O., Fischer, P., & Brox, T. (2015). U-Net: Convolutional networks for biomedical image segmentation. *Medical Image Computing and Computer-Assisted Intervention*, 234-241.
-2. Tan, M., & Le, Q. (2019). EfficientNet: Rethinking model scaling for convolutional neural networks. *International Conference on Machine Learning*, 6105-6114.
-3. Codella, N., Rotemberg, V., Tschandl, P., Celebi, M.E., Dusza, S., Gutman, D., Helba, B., Kalloo, A., Liopyris, K., Marchetti, M., et al. (2019). Skin lesion analysis toward melanoma detection 2018: A challenge hosted by the international skin imaging collaboration (ISIC). *arXiv:1902.03368*.
-
-## Contributors
-
-- [Your Name] - Lead Developer
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details 
