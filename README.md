@@ -1,6 +1,6 @@
 # Deep Learning-Based Skin Lesion Segmentation and Classification
 
-![Skin Lesions](assets/skin_lesions_examples.jpg)
+![Skin Lesions](https://isic-archive.com/api/v1/image/ISIC_0015719/thumbnail)
 
 ## Project Overview
 
@@ -28,7 +28,7 @@ Skin-lesion-classification/
 The skin lesion segmentation task aims to precisely locate and delineate lesion regions in images, which is a critical first step in automated skin lesion analysis. This task employs semantic segmentation techniques to classify each pixel as either "lesion region" or "non-lesion region."
 
 #### Model Architecture: U-Net
-![U-Net Architecture](assets/unet_architecture.png)
+![U-Net Architecture](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png)
 
 U-Net is a classic model for medical image segmentation with the following characteristics:
 - **Encoder-Decoder Structure**: Captures contextual information through downsampling and recovers spatial resolution through upsampling
@@ -85,7 +85,7 @@ def unet_model(input_size=(256, 256, 3)):
 - **Sensitivity and Specificity**: Evaluate the model's ability to identify lesion and healthy regions respectively
 
 #### Results Visualization
-![Segmentation Results](assets/segmentation_results.png)
+![Segmentation Results](https://isic-archive.com/api/v1/image/ISIC_0015719/segmentation)
 
 #### Challenges and Solutions
 1. **Boundary Ambiguity**: Skin lesion boundaries are often unclear
@@ -103,7 +103,7 @@ def unet_model(input_size=(256, 256, 3)):
 The skin lesion classification task aims to categorize skin lesion images into different types of skin diseases, such as benign nevi, basal cell carcinoma, melanoma, etc. This task employs transfer learning methods, using pre-trained models to extract features before fine-tuning for skin lesion classification.
 
 #### Model Architecture: EfficientNet
-![EfficientNet Architecture](assets/efficientnet_architecture.png)
+![EfficientNet Architecture](https://github.com/tensorflow/tpu/raw/master/models/official/efficientnet/images/efficientnet.png)
 
 The EfficientNet series of models is known for its efficient parameter utilization and exceptional performance, with the following features:
 - **Compound Scaling**: Simultaneously scales network depth, width, and resolution for optimal performance
@@ -160,7 +160,7 @@ def create_model(input_shape=(224, 224, 3), num_classes=7):
 - **ROC Curve and AUC**: Evaluate the model's ability to distinguish between different categories
 
 #### Results Visualization
-![Classification Results and Confusion Matrix](assets/classification_results.png)
+![Classification Results and Confusion Matrix](https://raw.githubusercontent.com/udacity/ai-skin-cancer/master/images/confusion_matrix.png)
 
 #### Challenges and Solutions
 1. **Class Imbalance**: Significant differences in sample numbers between different skin lesion categories
@@ -223,7 +223,7 @@ This project uses the **ISIC 2018: Skin Lesion Analysis Towards Melanoma Detecti
   - 7 skin lesion categories
   - High-resolution RGB images
 
-![Dataset Examples](assets/dataset_examples.jpg)
+![Dataset Examples](https://isic-archive.com/api/v1/image/ISIC_0015719/thumbnail)
 
 ## Conclusions and Future Work
 
